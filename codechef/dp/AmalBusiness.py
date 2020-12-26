@@ -6,7 +6,7 @@ def maximumNonDecreasingOrder(n,arr):
     max = int(0)
     sum = int(0)
     for i in range(1,n):
-      if ( arr[i-1] < arr[i] ) :
+      if ( arr[i-1] <= arr[i] ) :
           sum = sum + 1
       else:
          sum = 0
